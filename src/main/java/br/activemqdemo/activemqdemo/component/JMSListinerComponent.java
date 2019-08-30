@@ -22,7 +22,7 @@ public class JMSListinerComponent {
 	}
 	@JmsListener(destination = "queue.sample")
 	public void onReceiverQueue1(String str) {
-		System.out.println("consumindo fila" + str);
+		System.out.println("consumindo fila " + str);
 	}
 	@JmsListener(destination = "queue.sample")
 	public void onReceiverQueue2(String str) {
