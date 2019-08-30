@@ -30,7 +30,7 @@ public class JMSListinerComponent {
 	}
 	@JmsListener(destination = "queue.sample")
 	public void onReceiverQueue3(String str) {
-		System.out.println("consumindo fila" + str);
+		System.out.println("consumindo fila " + str);
 	}
 	@JmsListener(destination = "queue.sample")
 	public void onReceiverQueue4(String str) {
