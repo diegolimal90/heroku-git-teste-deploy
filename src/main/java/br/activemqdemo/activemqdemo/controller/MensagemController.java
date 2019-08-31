@@ -1,6 +1,7 @@
 package br.activemqdemo.activemqdemo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,4 +19,8 @@ public class MensagemController {
 		message.enviaMensagemFila(mensagem);
 	}
 	
+	@GetMapping("/")
+	public String hello() {
+		return "Olá mundo!";
+	}
 }
