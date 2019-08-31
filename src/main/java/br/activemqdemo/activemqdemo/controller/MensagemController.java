@@ -21,6 +21,6 @@ public class MensagemController {
 	
 	@GetMapping("/")
 	public String hello() {
-		return "Olá mundo!";
+		return "Olá projeto Sigma!";
 	}
 }
